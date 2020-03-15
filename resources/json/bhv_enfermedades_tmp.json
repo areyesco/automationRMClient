@@ -1,0 +1,69 @@
+{
+    "paciente_numero": "6105",
+    "nombre": "jimena",
+    "apellido": "hernandez gutierrez",
+    "tratamientos": [{
+            "analisis_principal": {
+                "nivel": "1",
+                "tipo_area": "porcentaje",
+                "trigger_inicial": "2",
+                "trigger_borrar": "60",
+                "tipo_plantilla": "generador",
+                "plantilla": "Microbiologia",
+                "moleculas_plantilla": ["virus", "tasas agr"],
+                "resultado_viba": {
+                    "valor_esperado": {
+                        "nombre_molecula": "humedad",
+                        "valor_buscado": "65"
+                    },
+                    "eliminar": ["humedad"]
+                }
+            }
+        },
+        {
+            "analisis_potencia": {}
+        },
+        {
+            "proyeccion": {}
+        },
+        {
+            "analisis_principal": {
+                "nivel": "1",
+                "tipo_area": "porcentaje",
+                "trigger_inicial": "2",
+                "trigger_borrar": "80",
+                "tipo_plantilla": "generador",
+                "plantilla": "Microbiologia",
+                "moleculas_plantilla": ["hongos", "bacterias", "tasas agr"],
+                "resultado_viba": {
+                    "valor_esperado": {
+                        "nombre_molecula": "humedad",
+                        "valor_buscado": "65"
+                    },
+                    "eliminar": ["humedad", "bacterias"]
+                }
+            }
+        },
+        {
+            "analisis_potencia": {}
+        },
+        {
+            "proyeccion": {}
+        },
+        {
+            "analisis_principal": {
+                "tipo_area": "hfif",
+                "trigger_inicial": "2",
+                "trigger_borrar": "10",
+                "tipo_plantilla": "generador",
+                "plantilla": "Enfermedades y Sintomas"
+            }
+        },
+        {
+            "analisis_potencia": {}
+        },
+        {
+            "proyeccion": {}
+        }
+    ]
+},
